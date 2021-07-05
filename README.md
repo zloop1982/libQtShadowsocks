@@ -1,68 +1,29 @@
 libQtShadowsocks
 ================
 
+**This project is no longer being maintained**
+
+[![Build Status](https://travis-ci.org/shadowsocks/libQtShadowsocks.svg?branch=master)](https://travis-ci.org/shadowsocks/libQtShadowsocks) <a href="https://copr.fedorainfracloud.org/coprs/librehat/shadowsocks/package/libQtShadowsocks/"><img src="https://copr.fedorainfracloud.org/coprs/librehat/shadowsocks/package/libQtShadowsocks/status_image/last_build.png" /></a>
+
 Introduction
 ------------
 
-`libQtShadowsocks` is a lightweight library for `shadowsocks`.
+`libQtShadowsocks` is a lightweight [shadowsocks][ss] library.
 
-Written in C++ using Qt 5 framework, it aims to provide a developer-friendly shadowsocks library, mainly for Qt applications such as [shadowsocks-qt5] (https://github.com/librehat/shadowsocks-qt5/).
+Written in C++ using Qt 5 framework and Botan library, it aims to provide a developer-friendly [shadowsocks][ss] library for Qt applications such as [shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5/).
 
-The `client` utilises this library. You can check the code to see how to use `libQtShadowsocks` in your project. `client` (`shadowsocks-libqss`) can also be used as a standalone program in both shadowsocks local-side and shadowsocks server-side.
+The sub-project `shadowsocks-libqss` utilises this library. You may wish to check the code to see how to integrate `libQtShadowsocks` into your project. `shadowsocks-libqss` can also be used as a standalone program in both local-side and server-side.
 
-Check [installation wiki page](https://github.com/librehat/libQtShadowsocks/wiki/Installation) to see how to install this library and/or `shadowsocks-libqss`.
+Check [installation wiki page](https://github.com/shadowsocks/libQtShadowsocks/wiki/Installation) to see how to install this library and/or `shadowsocks-libqss`.
 
-Current Status
---------------
-
-###Supported Platforms###
-
-- Microsoft Windows (Vista or above)
-- GNU/Linux
-- \*BSD (untested)
-- Mac OS X (untested)
-
-###Supported Methods###
-
-- TABLE
-- AES-128-CFB
-- AES-192-CFB
-- AES-256-CFB
-- BF-CFB
-- CAMELLIA-128-CFB
-- CAMELLIA-192-CFB
-- CAMELLIA-256-CFB
-- CAST5-CFB
-- CHACHA20
-- DES-CFB
-- IDEA-CFB
-- RC2-CFB
-- RC4
-- RC4-MD5
-- SALSA20
-- SEED-CFB
-
-RoadMap
--------
-
-Below features will possibly be implemented in future versions.
-
-- ~~Traffic statistics (v1.2)~~
-- ~~Server ping (v1.2)~~
-- ~~ChaCha cipher (use bundled ChaCha for botan < 1.11)~~
-- ~~Multiple servers balance (v1.4)~~
-- ~~HTTP proxy(abandoned)~~
-- ~~Asynchronous DNS query (v1.6)~~
-- Test compatibility on BSD platforms (v1.8)
-- Multiple profiles balance (v1.8)
-- QML module (v1.10)
-
-Please open an [issue](https://github.com/librehat/libQtShadowsocks/issues) to request a new feature.
+[ss]: http://shadowsocks.org
 
 License
 -------
 
-Copyright (C) 2014-2015 Symeon Huang
+![](http://www.gnu.org/graphics/lgplv3-147x51.png)
+
+Copyright (C) 2014-2017 Symeon Huang
 
 This library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
